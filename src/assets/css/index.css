@@ -1,0 +1,76 @@
+:root {
+    --font: "Cascadia Mono", system-ui, Avenir, Helvetica, Arial, sans-serif;
+    --bg: #0e181d;
+    --bg-dark: #030910;
+    --yellow: #f3f56e;
+    --red: #da2a90;
+    --highlight: #ffee00;
+}
+html,
+body {
+    font-family: var(--font);
+    background: var(--bg);
+    color: #ffffff;
+    line-height: 1.5;
+    font-weight: 400;
+    max-width: 100%;
+}
+
+.logo pre {
+    font: inherit;
+    font-size: clamp(0.425rem, 1.25vw, 0.8rem);
+    color: var(--yellow);
+    justify-self: center;
+    letter-spacing: -0.045em;
+    line-height: 1.09375;
+    white-space: pre;
+    transition: color 0.15s ease-in-out;
+    overflow: hidden;
+}
+
+.logo a {
+    text-decoration: none !important;
+}
+.logo pre:hover {
+    color: var(--highlight);
+}
+.player-accounts {
+    font-size: small;
+    background-color: var(--bg-dark);
+    border-radius: 0.3rem;
+    padding: 0.5rem;
+    margin: 1rem;
+
+    .player-name {
+        margin-bottom: 0;
+    }
+
+    .icon {
+        max-width: 100px;
+        aspect-ratio: 1 / 1;
+        border-radius: 0.3rem;
+        padding: 0;
+    }
+
+    a {
+        color: var(--yellow);
+        text-decoration: none;
+    }
+
+    a:hover {
+        color: var(--highlight);
+        text-decoration: underline;
+    }
+
+    li {
+        list-style-type: disc;
+    }
+
+    ul {
+        padding-left: 1.5rem;
+    }
+
+    .region {
+        color: var(--red);
+    }
+}
